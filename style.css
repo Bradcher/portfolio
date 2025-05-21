@@ -1,0 +1,377 @@
+.hero-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid blue;
+  }
+  .section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  #projects {
+      background-color: whitesmoke;
+  }
+  .skill-img {
+      width: 120px;     /* or any consistent size you prefer */
+      height: auto; 
+      object-fit: contain;   /* maintains aspect ratio */
+  }
+  #why-me .card {
+  height: 400px; /* You can increase or decrease this value */
+  }
+  .project-img {
+      width: 320px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  /* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6c63ff;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Skills Styling */
+.skill-img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#skills .col-md-3 h6 {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Certifications Styling */
+#certifications img {
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#certifications img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* Optional Section Padding Tweaks */
+#skills, #certifications {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+.card h6 {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.skill-img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500
+}
+strong {
+  color: blue;
+}
+
+.first-but {
+  background-color: blue;   /* Initial button color */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.first-but:hover {
+  background-color: #6c63ff;   /* Color on hover */
+  color: white;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: blue;            /* Text color */
+  --bs-btn-border-color: blue;     /* Border color */
+  --bs-btn-hover-bg: blue;         /* Background on hover */
+  --bs-btn-hover-border-color: blue;
+  --bs-btn-hover-color: #fff;         /* Text color on hover */
+}
+
+  /*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-contact-490 {
+        padding: var(--sectionPadding);
+        font-family: 'Inter', sans-serif; /* Added Inter font */
+    }
+    #cs-contact-490 .cs-container {
+        width: 100%;
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    #cs-contact-490 .cs-content {
+        max-width: 32.625rem;
+        text-align: left;
+    }
+    #cs-contact-490 .cs-text {
+        margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
+    }
+    #cs-contact-490 .cs-header {
+        font-size: clamp(0.8125rem, 1.5vw, 1rem);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin: 0 0 1rem 0;
+        color: blue;
+        display: block;
+    }
+    #cs-contact-490 .cs-link {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        text-decoration: none;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin: 0 0 clamp(1rem, 2.5vw, 2rem);
+        color: var(--headerColor);
+        display: block;
+    }
+    #cs-contact-490 .cs-link:hover {
+        text-decoration: underline;
+    }
+    #cs-contact-490 .cs-link:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-contact-490 .cs-social {
+        margin-top: clamp(2rem, 6vw, 5rem);
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 0.75em;
+    }
+    #cs-contact-490 .cs-social-link {
+        width: clamp(2rem, 4vw, 3.25rem);
+        height: clamp(2rem, 4vw, 3.25rem);
+        background-color: #4e4b66;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+    #cs-contact-490 .cs-social-link:hover {
+        background-color: var(--primary);
+        transform: translateY(-0.1875rem);
+    }
+    #cs-contact-490 .cs-social-img {
+        height: clamp(0.875rem, 2vw, 1.5rem);
+        width: auto;
+        display: block;
+    }
+    #cs-contact-490 #cs-form-490 {
+        width: 100%;
+        max-width: 40.625rem;
+        margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+        padding: clamp(1.25rem, 4.5vw, 2.5rem);
+        box-sizing: border-box;
+        border: 1px solid #dad9e3;
+        border-radius: 1rem;
+    }
+    #cs-contact-490 .cs-label {
+        font-size: clamp(0.875rem, 1.3vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: clamp(1rem, 1em, 1.25rem);
+        color: var(--headerColor);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #cs-contact-490 .cs-label-message {
+        margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-contact-490 .cs-input,
+    #cs-contact-490 textarea {
+        font-size: 1rem;
+        width: 100%;
+        height: 4rem;
+        margin-top: 0.25rem;
+        padding-left: 1.25rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        box-sizing: border-box;
+        transition: border 0.3s;
+        font-family: 'Inter', sans-serif; /* Ensure inputs use Inter too */
+    }
+    #cs-contact-490 .cs-input:hover,
+    #cs-contact-490 textarea:hover {
+        border: 1px solid var(--primary);
+    }
+    #cs-contact-490 .cs-input::placeholder,
+    #cs-contact-490 textarea::placeholder {
+        color: #7d799c;
+    }
+    #cs-contact-490 textarea {
+        margin: 0;
+        padding-top: 1.25rem;
+        min-height: 7.5rem;
+    }
+    #cs-contact-490 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875em, 5.5vw, 3.5em);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        color: #fff;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border: none;
+        border-radius: 0.5rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif; /* Button text font */
+    }
+    #cs-contact-490 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.5rem;
+        transition: width 0.3s;
+    }
+    #cs-contact-490 .cs-button-solid:hover {
+        cursor: pointer;
+    }
+    #cs-contact-490 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-contact-490 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #cs-contact-490 .cs-content {
+        width: 40%;
+        order: 2;
+        flex: none;
+    }
+    #cs-contact-490 #cs-form-490 {
+        margin: 0;
+    }
+}
+body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif !important;
+}
+.about-text {
+  font-size: 20px;
+  line-height: 2;
+}
+/* Global styles and variables */
+:root {
+    --primary: blue;
+    --primaryLight: blue;
+    --secondary: blue;
+    --secondaryLight: blue;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: gray;
+    --bodyTextColorWhite: #fafbfc;
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Optional: set site-wide */
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.cs-topper,
+.cs-title,
+.cs-text {
+    font-family: 'Inter', sans-serif; /* Consistent font for headings/text */
+}
+.cs-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+.cs-topper {
+  color: blue;
+  font-weight: bold;
+}
+.cs-text {
+  font-weight: 300;
+}
